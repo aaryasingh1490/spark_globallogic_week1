@@ -5,7 +5,7 @@ from pyspark.sql.functions import avg
 spark = SparkSession.builder.appName("Week1Pipeline").getOrCreate()
 
 # Read CSV
-df = spark.read.csv("data/employee.csv", header=True, inferSchema=True)
+df = spark.read.csv("excercise_1_spark_pipeline/data/employee.csv", header=True, inferSchema=True)
 
 print("\n================ ORIGINAL DATASET ================\n")
 df.show()
